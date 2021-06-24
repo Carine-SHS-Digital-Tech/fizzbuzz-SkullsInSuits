@@ -1,0 +1,26 @@
+# Would you like to play a game?
+# It's simple enough, print the numbers 1 to 100 but if they are a multiple of 3, print Fizz instead
+# If they are a multiple of 5, print Buzz instead
+# But, if it is a multiple of both 3 and 5, print FizzBuzz instead
+# This is my way of doing it
+fizzothy = 1
+# This is fizzothy, he will increase every time the program loops
+while fizzothy != 101:
+    # The program will stop once it hits 100
+    y = fizzothy % 3
+    z = fizzothy % 5
+    if fizzothy % 3 and fizzothy % 5:
+        # If fizzothy is divisible by 3, return true. If fizzothy is divisible by 5, return true. Two truths = 2 which doesn't = 3 or 5, print fizzothy
+        print(fizzothy)
+    elif fizzothy % 3 == 0:
+        # If fizzothy is divisible by 3, print Fizz only
+        print("Fizz")
+    elif fizzothy % 5 == 0:
+        # If fizzothy is divisible by 5, print Buzz only
+        print("Buzz")
+    else:
+        print("FizzBuzz")
+        # Any number left must be divisible by both  3 and five. Print FizzBuzz
+    fizzothy = fizzothy + 1
+    # Aww, they grow up so fast, don't they.
+    # See you again soon
